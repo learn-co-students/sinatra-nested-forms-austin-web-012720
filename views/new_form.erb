@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fill the form</h1>
+<form action="/pirates" method="post">
+  <p>  <label>Type pirate name<input type="text" name="pirate[name]"></label> </p>
+  <p>  <label>Type pirate weight<input type="text" name="pirate[weight]"></label></p>
+  <p>  <label>Type pirate height<input type="text" name="pirate[height]"></label></p>
+  <p>  <label>Type ship name<input type="text" name="pirate[ships][][name]"></label></p>
+  <p> <label>Type the type<input type="text" name="pirate[ships][][type]"></label></p>
+  <p> <label>Type booty<input type="text" name="pirate[ships][][booty]"></label></p>
+  <p>  <label>Type ship name<input type="text" name="pirate[ships][][name]"></label></p>
+  <p>  <label>Type rhe type<input type="text" name="pirate[ships][][type]"></label></p>
+  <p>  <label>Type booty<input type="text" name="pirate[ships][][booty]"></label></p>
+  <input type="submit">
+</form>
+
+</body>
+</html>
