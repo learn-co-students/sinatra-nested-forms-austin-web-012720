@@ -13,14 +13,15 @@ module FormsLab
     end
 
     post '/pirates' do
+      
       @pirate = Pirate.new(params[:pirate])
 
       @ships = params[:pirate][:ships] do |ship_hash|
                   Ship.new(ship_hash)
                end
-      
+  
       erb :'pirates/show'
+    
     end
-
   end
 end
